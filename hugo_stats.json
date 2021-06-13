@@ -1,0 +1,50 @@
+{
+  "htmlElements": {
+    "tags": [
+      "!doctype",
+      "body",
+      "br",
+      "div",
+      "h1",
+      "head",
+      "html",
+      "link",
+      "meta",
+      "meta\r\n\t\tcontent=\"aeiwi,",
+      "p",
+      "script",
+      "style",
+      "title"
+    ],
+    "classes": [
+      "bg-gradient-to-r",
+      "bg-white",
+      "border-gray-200",
+      "border-t",
+      "flex",
+      "font-bold",
+      "font-medium",
+      "from-purple-300",
+      "items-center",
+      "justify-center",
+      "m-auto",
+      "min-h-screen",
+      "overflow-hidden",
+      "pb-8",
+      "pt-8",
+      "px-12",
+      "py-16",
+      "py-8",
+      "shadow",
+      "sm:rounded-lg",
+      "text-2xl",
+      "text-5xl",
+      "text-9xl",
+      "text-center",
+      "text-purple-400",
+      "to-blue-200",
+      "w-9/12"
+    ],
+    "ids": null
+  }
+}

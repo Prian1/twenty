@@ -1,0 +1,93 @@
+<li class="flex mb-4 border rounded-lg bg-gray-100 items-top justify-center">
+    <article class="w-full overflow-hidden relative">
+     <!-- component -->
+<script
+src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+defer
+></script>
+
+{{ range where .Site.RegularPages "Section" "mri" }}
+<div class="block  md:flex md:space-x-2 px-2 lg:p-8">
+    <div class="w-full lg:w-2/3">
+
+  <dialog
+    open
+    class="rounded-2xl overflow-hidden p-0 w-auto max-w-7xl md:mx-auto md:w-2/3 shadow-lg m-8"
+  >
+    <div class="flex flex-col lg:flex-row">
+      <div
+        class="relative h-40 sm:h-40 w-full lg:h-auto lg:w-2/3 xl:w-2/5 flex-none"
+      >
+      <img src="{{.Params.featured_image}}" class="absolute left-0 top-0 w-full h-full rounded z-0 object-cover" />
+  
+    
+      </div>
+      <div class="w-full">
+        <div class="p-4">
+          <div class="flex justify-between items-start">
+          
+              <a
+                class="text-blue-700 border border-blue-300 hover:border-blue-700 px-4 py-1 rounded"
+                href="#"
+                >Website</a
+              >
+              <a
+               class="text-blue-700 border border-blue-300 hover:border-blue-700 px-4 py-1 rounded"
+                href="https://www.instagram.com/twenty.sixapparel/"
+               ><svg class="h-6 w-6 text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="4" width="16" height="16" rx="4" />  <circle cx="12" cy="12" r="3" />  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg></a
+             >
+
+             <a
+                 class="text-blue-700 border border-blue-300 hover:border-blue-700 px-4 py-1 rounded"
+                 href="https://www.bit.ly/akumaumin" 
+                 ><svg class="h-6 w-6 text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />  <line x1="15" y1="9" x2="20" y2="4" />  <polyline points="16 4 20 4 20 8" /></svg></a
+               >
+            
+            <br>
+            <br>
+
+            <a href="#" class="text-gray-400 hover:text-gray-800 p-1">
+           
+            </a>
+          </div>
+          <!-- tabs -->
+          <div class="relative">
+            <header class="flex items-end text-sm">
+              <button
+                class="border border-b-0 px-3 py-1 text-sm focus:outline-none rounded-tl-md"
+                :class="activeTab===1 ? 'font-semibold' : ''"
+                @click="activeTab=1"
+              >
+                Description
+              </button>
+              <button
+                class="border border-b-0 px-3 py-1 focus:outline-none"
+                :class="activeTab===2 ? 'font-semibold' : ''"
+                @click="activeTab=2"
+              >
+              </button>
+            </header>
+            <div
+              class="border overflow-y-auto rounded-b-xl rounded-tr-xl"
+              id="tabs-contents"
+            >
+              <div x-show="activeTab===1">
+                <p class="md:flex">
+                    {{.Content}}
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- action buttons -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</div>
+</div>
+</article>
+</li>
+
+{{end}}
+
