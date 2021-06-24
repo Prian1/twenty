@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pilihans on My New Hugo Site</title>
-    <link>http://example.org/pilihan/</link>
+    <link>https://twentysixdigitalprinting.com/pilihan/</link>
     <description>Recent content in Pilihans on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jun 2021 16:08:19 +0700</lastBuildDate><atom:link href="http://example.org/pilihan/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jun 2021 16:08:19 +0700</lastBuildDate><atom:link href="https://twentysixdigitalprinting.com/pilihan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Undangan</title>
-      <link>http://example.org/pilihan/undangan/</link>
+      <link>https://twentysixdigitalprinting.com/pilihan/undangan/</link>
       <pubDate>Thu, 24 Jun 2021 16:08:19 +0700</pubDate>
       
-      <guid>http://example.org/pilihan/undangan/</guid>
+      <guid>https://twentysixdigitalprinting.com/pilihan/undangan/</guid>
       <description>Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</description>
     </item>
     
     <item>
       <title>Sablon</title>
-      <link>http://example.org/pilihan/sablon/</link>
+      <link>https://twentysixdigitalprinting.com/pilihan/sablon/</link>
       <pubDate>Thu, 24 Jun 2021 16:07:44 +0700</pubDate>
       
-      <guid>http://example.org/pilihan/sablon/</guid>
+      <guid>https://twentysixdigitalprinting.com/pilihan/sablon/</guid>
       <description>Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</description>
     </item>
     
     <item>
       <title>Aksesoris</title>
-      <link>http://example.org/pilihan/aksesoris/</link>
+      <link>https://twentysixdigitalprinting.com/pilihan/aksesoris/</link>
       <pubDate>Thu, 24 Jun 2021 16:07:11 +0700</pubDate>
       
-      <guid>http://example.org/pilihan/aksesoris/</guid>
+      <guid>https://twentysixdigitalprinting.com/pilihan/aksesoris/</guid>
       <description>Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</description>
     </item>
     

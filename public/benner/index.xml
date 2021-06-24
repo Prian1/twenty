@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Benners on My New Hugo Site</title>
-    <link>http://example.org/benner/</link>
+    <link>https://twentysixdigitalprinting.com/benner/</link>
     <description>Recent content in Benners on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jun 2021 15:06:03 +0700</lastBuildDate><atom:link href="http://example.org/benner/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Jun 2021 15:06:03 +0700</lastBuildDate><atom:link href="https://twentysixdigitalprinting.com/benner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gelas</title>
-      <link>http://example.org/benner/gelas/</link>
+      <link>https://twentysixdigitalprinting.com/benner/gelas/</link>
       <pubDate>Wed, 23 Jun 2021 15:06:03 +0700</pubDate>
       
-      <guid>http://example.org/benner/gelas/</guid>
+      <guid>https://twentysixdigitalprinting.com/benner/gelas/</guid>
       <description>Masukkan deskripsi produk,Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</description>
     </item>
     
     <item>
       <title>Binner</title>
-      <link>http://example.org/benner/binner/</link>
+      <link>https://twentysixdigitalprinting.com/benner/binner/</link>
       <pubDate>Wed, 23 Jun 2021 15:05:35 +0700</pubDate>
       
-      <guid>http://example.org/benner/binner/</guid>
+      <guid>https://twentysixdigitalprinting.com/benner/binner/</guid>
       <description>Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</description>
     </item>
     
     <item>
       <title>Brosure</title>
-      <link>http://example.org/benner/brosure/</link>
+      <link>https://twentysixdigitalprinting.com/benner/brosure/</link>
       <pubDate>Wed, 23 Jun 2021 15:03:48 +0700</pubDate>
       
-      <guid>http://example.org/benner/brosure/</guid>
+      <guid>https://twentysixdigitalprinting.com/benner/brosure/</guid>
       <description>Masukkan deskripsi produk,Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</description>
     </item>
     
     <item>
       <title>Kalender</title>
-      <link>http://example.org/benner/kalender/</link>
+      <link>https://twentysixdigitalprinting.com/benner/kalender/</link>
       <pubDate>Wed, 23 Jun 2021 15:03:30 +0700</pubDate>
       
-      <guid>http://example.org/benner/kalender/</guid>
+      <guid>https://twentysixdigitalprinting.com/benner/kalender/</guid>
       <description>Masukkan deskripsi produk,Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</description>
     </item>
     
     <item>
       <title>Baju</title>
-      <link>http://example.org/benner/baju/</link>
+      <link>https://twentysixdigitalprinting.com/benner/baju/</link>
       <pubDate>Wed, 23 Jun 2021 15:03:18 +0700</pubDate>
       
-      <guid>http://example.org/benner/baju/</guid>
+      <guid>https://twentysixdigitalprinting.com/benner/baju/</guid>
       <description>Masukkan deskripsi produk,Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</description>
     </item>
     
     <item>
       <title>Templet1</title>
-      <link>http://example.org/benner/templet1/</link>
+      <link>https://twentysixdigitalprinting.com/benner/templet1/</link>
       <pubDate>Mon, 21 Jun 2021 10:05:42 +0700</pubDate>
       
-      <guid>http://example.org/benner/templet1/</guid>
+      <guid>https://twentysixdigitalprinting.com/benner/templet1/</guid>
       <description>Masukkan deskripsi Produk,Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</description>
     </item>
     
