@@ -5,3 +5,9 @@ theme = "pr"
 
 [build]
   writeStats = true
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    series = "Rp"
+    reting = ""

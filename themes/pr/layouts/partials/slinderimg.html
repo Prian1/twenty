@@ -1,0 +1,64 @@
+<main class="my-8">
+  <div class="container mx-auto px-2">
+    {{ range where .Site.RegularPages "Section" "navimg" }}
+      <h2 class=" text-center font-bold text-xl text-red-500 pt-10">HAPPY CLIENTS ABOUT US</h2>            
+<div class="md:flex swiper-container w-50 ">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide flex items-center justify-center">
+      <div class="py-6">
+      <div class="flex jusify-center py- text-gray-200 text-center">
+          <a href="https://wa.me/p/4077748915645538/6285157199771">
+        <img src="{{.Params.featured_image_2}}" alt="">
+        </a>
+      </div>
+ 
+    <div class="text-sm flex justify-center text-gray-300">Julia Bredshow, NY</div>
+    </div>
+  </div>
+  <div class="swiper-slide flex items-center justify-center">
+    <div class="py-6">
+    <div class="flex jusify-center py- text-gray-200 text-center">
+        <a href="https://wa.me/p/4077748915645538/6285157199771">
+      <img src="{{.Params.featured_image_2}}" alt="">
+      </a>
+    </div>
+
+  <div class="text-sm flex justify-center text-gray-300">Julia Bredshow, NY</div>
+  </div>
+</div>
+    
+</div>
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev text-xs rounded-full text-red-600 "></div>
+<div class="swiper-button-next  text-xs rounded-full text-red-600"></div>
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>   
+</div>
+    </div>
+    {{ end }}
+</div>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+// Optional parameters
+direction: 'horizontal',
+loop: true,
+
+// If we need pagination
+pagination: {
+  el: '.swiper-pagination',
+},
+
+// Navigation arrows
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+// And if we need scrollbar
+scrollbar: {
+  el: '.swiper-scrollbar',
+},
+})
+</script>

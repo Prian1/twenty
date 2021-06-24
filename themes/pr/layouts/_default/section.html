@@ -1,15 +1,57 @@
 {{ define "main" }}
-  <header>
-    <h1 class="font-bold text-3xl">{{.Title}}</h1>
-  </header>
-  <section>
-    {{ .Content }}
-  </section>
-  <section>
-    <ul class="mt-4 items-stretch md:grid md:grid-cols-3 md:col-gap-8 md:row-gap-10">
-      {{ range .Paginator.Pages }}
-        {{ partial "summary.html" . }}
-      {{ end }}
-    </ul>
-  </section>
-{{ end }}
+<!-- component -->
+<!-- component -->
+<br>
+<br>
+
+
+
+<style>
+    .bannerFondo{
+            height: 400px;
+    }
+    </style>
+   <!--- <div>      
+      <div class="bannerFondo bg-green-800	bg-left-top bg-auto bg-repeat-x" style="background-image: url()">
+      </div> --->
+    <!-- Column Content -->
+          <div class="h-80 rounded-md  bg-cover bg-center" style="background-image: url({{.Params.featured_image_1}})">
+              <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
+                  <div class="flex-auto items-center px-10 max-w-sm">
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="-mt-28 ">
+            <div class="w-full text-center">
+              <h1 class="text-center font-semibold tracking-widest text-white">Twenti six</h1>
+              <h4 class="font-bold text-lg text-white">
+                STORE
+              </h4>
+            </div>
+                
+        <div class="md:flex grid-cols-1 sm:grid-cols-4 ">
+          {{ range where .Site.RegularPages "Section" "benner" }}
+            <div class="p-3 sm:p-10 cursor-pointer">
+                <div class="py-0 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
+                    <a href="{{.Permalink}}">
+                    <div class="h-60 rounded-md  bg-cover bg-center" style="background-image: url({{.Params.featured_image}})"></div>
+                    <div class="space-y-0">
+                        <div class="px-2 py-2">
+                            <div class="space-y-5">
+                    <div class="font-bold text-lg mb-2">{{.Title}}</div> </a>
+                                <p class="text-gray-700 text-base">
+                                    {{.Summary}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{end}}
+          </div>
+        </div>
+    
+    </div>
+    
+{{end}}

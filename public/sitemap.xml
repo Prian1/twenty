@@ -3,15 +3,171 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.org/tags/aksesoris/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/binner/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/categories/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/hiburan/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/makanan/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/olahraga/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/pilihan/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/sablon/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/tags/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/pilihan/undangan/</loc>
+    <lastmod>2021-06-24T16:08:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/pilihan/sablon/</loc>
+    <lastmod>2021-06-24T16:07:44+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/pilihan/aksesoris/</loc>
+    <lastmod>2021-06-24T16:07:11+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2021-06-23T21:32:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/perkantoran-stationery/cetak-mousepad/</loc>
+    <lastmod>2021-06-23T21:20:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/perkantoran-stationery/</loc>
+    <lastmod>2021-06-23T21:20:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/media-promosi/cetak-brosur/</loc>
+    <lastmod>2021-06-23T21:19:08+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/media-promosi/</loc>
+    <lastmod>2021-06-23T21:19:08+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kartunama-undangan/cetak-kartunama/</loc>
+    <lastmod>2021-06-23T21:18:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kartunama-undangan/</loc>
+    <lastmod>2021-06-23T21:18:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kalender/cetak-kalender/</loc>
+    <lastmod>2021-06-23T21:17:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kalender/</loc>
+    <lastmod>2021-06-23T21:17:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/benner/</loc>
+    <lastmod>2021-06-23T15:06:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/benner/gelas/</loc>
+    <lastmod>2021-06-23T15:06:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/benner/binner/</loc>
+    <lastmod>2021-06-23T15:05:35+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/benner/brosure/</loc>
+    <lastmod>2021-06-23T15:03:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/amplok/</loc>
+    <lastmod>2021-06-23T15:03:30+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/benner/kalender/</loc>
+    <lastmod>2021-06-23T15:03:30+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/benner/baju/</loc>
+    <lastmod>2021-06-23T15:03:18+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/navimg/imgnav/</loc>
+    <lastmod>2021-06-21T21:33:06+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/navimg/</loc>
+    <lastmod>2021-06-21T21:33:06+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/benner/templet1/</loc>
+    <lastmod>2021-06-21T10:05:42+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/index.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/rp/</loc>
   </url>
   
 </urlset>

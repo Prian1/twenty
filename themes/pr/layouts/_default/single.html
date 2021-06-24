@@ -1,0 +1,17 @@
+{{ define "main" }}
+<!-- component -->
+<style>
+  .bannerFondo{
+          height: 400px;
+  }
+  </style>
+  <div class="grid grid-cols-1 sm:grid-cols-1 ">
+      <div class="p-1 sm:p-10">                      
+       {{ partial "from.html" . }}
+       </div>
+       </div> 
+       <br>
+       <div class="text-black font-bold text-xl text-center  "> Produk lainnya </div>
+       <br>
+       {{ partial "produkpilihan.html" . }}
+{{ end }}

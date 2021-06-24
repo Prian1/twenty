@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
+    <link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#FFFFFF">
+	<meta
+		content="aeiwi, alexa, alltheWeb, altavista, aol netfind, anzwers, canada, directhit, euroseek, excite, overture, go, google, hotbot. infomak, kanoodle, lycos, mastersite, national directory, northern light, searchit, simplesearch, Websmostlinked, webtop, what-u-seek, aol, yahoo, webcrawler, infoseek, excite, magellan, looksmart, bing, cnet, googlebot"
+		name="search engines">
+     <meta name="google-site-verification" content="pde0Y8pOtdt5TKDK71t85rCb1twSpn1JzD2_BnUD3f8" />
+     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap'><link rel="stylesheet" href="./style.css">
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@1.3.4/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+     
+
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet"><link rel="stylesheet" href="http://example.org/css/styles.min.3979f3372a6d3b623f321fccce52447304aeceb56894082efbe0c92e58229aad.css" integrity="sha256-OXnzNyptO2I/Mh/MzlJEcwSuzrVolAgu++DJLlgimq0=">
+    
+  </head>
+  
+
+<style>
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+    
+    .inset-l-full {
+        left: 100%;
+    }
+    </style>
+
+<div x-data="{ cartOpen: false , isOpen: false }" class="bg-white ">
+    <header>
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="w-full text-gray-700 md:text-center text-2xl font-semibold">
+                  <a href="http://example.org/pilihan/undangan/"></a>  Brand
+                </div>
+
+                    <div class="flex sm:hidden">
+                        <button @click="isOpen = !isOpen" type="button" class="text-gray-600 hover:text-gray-500 focus:outline-none focus:text-gray-500" aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav :class="isOpen ? '' : 'hidden'" class="sm:flex sm:justify-center sm:items-center mt-4">
+                <div class="flex flex-col sm:flex-row">
+
+                    <li class="block relative" x-data="{showChildren:false}" @click.away="showChildren=false">
+                        <a href="#" class="flex items-center h-10 leading-10 px-4 rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100" @click.prevent="showChildren=!showChildren">
+                            <span class="mr-3 text-xl"> <i class="mdi mdi-layers-outline"></i> </span>
+                            <span>Kategori</span>
+                            <span class="ml-2"> <i class="mdi mdi-chevron-down"></i> </span>
+                        </a>
+                        <div class="bg-white shadow-md rounded border border-gray-300 text-sm absolute top-auto left-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none;">
+                            <span class="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span>
+                            <div class="bg-white rounded w-full relative z-10 py-1">
+                                <ul class="list-reset">
+                                    <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                      <a href="#" class="flex items-center h-10 leading-10 px-4 rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100" @click.prevent="showChildren=!showChildren">
+                                      <span class="flex-1">Basic Elements</span>
+                                            <span class="ml-2"> <i class="mdi mdi-chevron-right"></i> </span>
+                                        </a>
+                                        <div class="bg-white shadow-md rounded border border-gray-300 text-sm absolute top-auto left-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none;">
+                                          <span class="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span>
+                                            <div class="bg-white rounded w-full relative z-10 py-1">
+                                                <ul class="list-reset">
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Accordion</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Buttons</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Badges</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Breadcrumbs</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Dropdown</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Modals</span> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                      <a href="#" class="flex items-center h-10 leading-10 px-4 rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100" @click.prevent="showChildren=!showChildren">
+                                      <span class="flex-1">Basic Elements</span>
+                                            <span class="ml-2"> <i class="mdi mdi-chevron-right"></i> </span>
+                                        </a>
+                                        <div class="bg-white shadow-md rounded border border-gray-300 text-sm absolute top-auto left-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none;">
+                                          <span class="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span>
+                                            <div class="bg-white rounded w-full relative z-10 py-1">
+                                                <ul class="list-reset">
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Accordion</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Buttons</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Badges</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Breadcrumbs</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Dropdown</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Modals</span> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                      <a href="#" class="flex items-center h-10 leading-10 px-4 rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100" @click.prevent="showChildren=!showChildren">
+                                      <span class="flex-1">Basic Elements</span>
+                                            <span class="ml-2"> <i class="mdi mdi-chevron-right"></i> </span>
+                                        </a>
+                                        <div class="bg-white shadow-md rounded border border-gray-300 text-sm absolute top-auto left-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none;">
+                                          <span class="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span>
+                                            <div class="bg-white rounded w-full relative z-10 py-1">
+                                                <ul class="list-reset">
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Accordion</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Buttons</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Badges</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Breadcrumbs</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Dropdown</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Modals</span> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="relative" x-data="{showChildren:false}" @mouseleave="showChildren=false" @mouseenter="showChildren=true">
+                                      <a href="#" class="flex items-center h-10 leading-10 px-4 rounded cursor-pointer no-underline hover:no-underline transition-colors duration-100 mx-1 hover:bg-gray-100" @click.prevent="showChildren=!showChildren">
+                                      <span class="flex-1">Basic Elements</span>
+                                            <span class="ml-2"> <i class="mdi mdi-chevron-right"></i> </span>
+                                        </a>
+                                        <div class="bg-white shadow-md rounded border border-gray-300 text-sm absolute top-auto left-0 min-w-full w-56 z-30 mt-1" x-show="showChildren" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" style="display: none;">
+                                          <span class="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span>
+                                            <div class="bg-white rounded w-full relative z-10 py-1">
+                                                <ul class="list-reset">
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Accordion</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Buttons</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Badges</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Breadcrumbs</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Dropdown</span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"> <span class="flex-1">Modals</span> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </li>
+                                </div>
+
+                                <div class="p-1 space-x-8">
+                     <a href="/" class="mt-3 text-black hover:underline sm:mx-3 sm:mt-0 tracking-widest  uppercase   focus:outline-none focus:shadow-outline">Home</a>
+                    <a class="mt-3 text-black hover:underline sm:mx-3 sm:mt-0" href="#">Contact</a>
+                    
+
+                    <a class="mt-3 text-black hover:underline sm:mx-3 sm:mt-0" href="#">About</a>
+                          </div>
+                          
+
+            </nav>
+            <div class="relative mt-6 max-w-lg mx-auto">
+            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                <svg class="h-5 w-5 text-gray-500" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+
+                <input class="w-full border rounded-md pl-10 pr-4 py-2 focus:border-blue-500 focus:outline-none focus:shadow-outline" type="text" placeholder="Search">
+            </div>
+           
+        </div>
+    </header>
+    
+    
+  <body>
+    <div class="">
+      
+
+<style>
+  .bannerFondo{
+          height: 400px;
+  }
+  </style>
+  <div class="grid grid-cols-1 sm:grid-cols-1 ">
+      <div class="p-1 sm:p-10">                      
+       <main class="my-8">
+    <div class="container mx-auto px-2">
+        <h2 class="text-center font-bold text-3xl text-red-500 pt-10">Undangan</h2>            
+  <div class="md:flex swiper-container w-50 ">
+  
+  <div class="swiper-wrapper">
+      
+      <div class="swiper-slide flex items-center justify-center">
+        <div class="py-6">
+        <div class="flex jusify-center py- text-gray-200 text-center">
+            <a href="https://wa.me/p/4077748915645538/6285157199771">
+          <img src="https://i2.wp.com/blog.printera.com/wp-content/uploads/2018/09/Roll-up-banner-1.png?resize=702%2C562" alt="">
+          </a>
+        </div>
+   
+      <div class="text-sm flex justify-center text-gray-300">Julia Bredshow, NY</div>
+      </div>
+    </div>
+    <div class="swiper-slide flex items-center justify-center">
+      <div class="py-6">
+      <div class="flex jusify-center py- text-gray-200 text-center">
+          <a href="https://wa.me/p/4077748915645538/6285157199771">
+        <img src="https://i2.wp.com/blog.printera.com/wp-content/uploads/2018/09/Roll-up-banner-1.png?resize=702%2C562" alt="">
+        </a>
+      </div>
+  
+    <div class="text-sm flex justify-center text-gray-300">Julia Bredshow, NY</div>
+    </div>
+  </div>
+      
+  </div>
+  
+  <div class="swiper-button-prev text-xs rounded-full text-red-600 "></div>
+  <div class="swiper-button-next  text-xs rounded-full text-red-600"></div>
+  
+  <div class="swiper-pagination"></div>   
+  </div>
+      </div>
+  </div>
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+    
+    direction: 'horizontal',
+    loop: true,
+    
+    
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    })
+    </script>
+
+
+<form class="whatsapp-form">
+    <div class="text-center font-bold">
+    <h1 class="text-black-500 uppercase">Undangan</h1>
+    <h2>HARGA :
+    <span class="text-black-500 mt-2">Rp.100.000</span>
+</h2>
+</div>
+      <h2 class="p-1 font-bold">  Deskripsi : </h2>
+      <div class="space-x-16">
+      <p><p>Coba deskripsi disini, deskripsi produk ini adalah deskripsi produk</p>
+</p>
+    </div>
+    <br>
+    <br>
+    <h2 class="p-1 font-bold ">Forms Pesanan : </h2>   
+<div class="datainput">
+<input class="validate" id="wa_name" name="name" required="" type="text" value=''/>
+<span class="highlight"></span><span class="bar"></span>
+<label>Input Nama</label>
+</div>
+<div class="datainput">
+<input class="validate" id="wa_email" name="email" required="" type="email" value=''/>
+<span class="highlight"></span><span class="bar"></span>
+<label>Input Email</label>
+</div>
+<div class="datainput">
+<select id="wa_select">
+  <option hidden='hidden' selected='selected' value='default'>Select Option</option>
+  <option value="1">"https://wa.me/p/4077748915645538/6285157199771"</option>
+  <option value="2">List Option 2</option>
+  <option value="3">List Option 3</option>
+</select>
+</div>
+<div class="datainput">
+<input class="validate" id="wa_number" name="count" required="" type="number" value=''/>
+<span class="highlight"></span><span class="bar"></span>
+<label>Jumlah Pesanan</label>
+</div>
+<div class="datainput">
+<textarea id='wa_textarea' placeholder='' maxlength='5000' row='1' required=""></textarea>
+<span class="highlight"></span><span class="bar"></span>
+<label>Catatan</label>
+</div>
+<a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">Send to Whatsapp</a>
+<div id="text-info"></div>
+</form>
+
+<div class='none'>Design by Dunia Blanter</div>
+<div class='none'>Design by www.idblanter.com</div>
+<div class='none'>Design by www.blantertheme.com</div>
+<div class='none'>Rio Ilham Hadi - Rhinokage Rio (about.idblanter.com)</div>
+
+
+<style>
+    body{font-family:'Roboto',Arial,sans-serif}.none{display:none}
+
+ 
+.datainput{position:relative;margin:5px 0 20px}.datainput p{font-size:12px;background:#eee;display:inline-block;padding:5px 15px;border-radius:.5rem}.whatsapp-form textarea{min-height:120px}.datainput select{padding:12px 0;color:#555;font-size:14px;width:100%;border:0;border-bottom:1px solid #ddd;outline:none;background:#fff}.datainput input,.datainput textarea{font-size:15px;padding:15px 0;display:block;width:100%;border:none;border-bottom:1px solid #ddd}.datainput input:focus,.datainput textarea:focus{outline:none}.datainput label{color:#999;font-size:14px;font-weight:400;position:absolute;pointer-events:none;left:0;top:18px;transition:.2s ease all}.datainput input:focus~label,.datainput input:valid~label,.datainput textarea:focus~label,.datainput textarea:valid~label{top:-10px;font-size:14px;color:#21a51f}#notif-license span{font-size:40px}#notif-license{display:none;position:fixed}.bar{position:relative;display:block;width:100%}.bar:before,.bar:after{content:'';height:2px;width:0;bottom:1px;position:absolute;background:#21a51f;transition:.2s ease all}.bar:before{left:50%}.bar:after{right:50%}.datainput input:focus~.bar:before,.datainput input:focus~.bar:after,.datainput textarea:focus~.bar:before,.datainput textarea:focus~.bar:after{width:50%}.indigox{background:#3f51b5}.orangex{background:#ff9800}.pinkx{background:#e91e63}.bluex{background:#2196F3}.purplex{background:#9c27b0}.redx{background:#F44336}.greenx{background:#4CAF50}.highlight{position:absolute;height:50%;width:100px;top:25%;left:0;pointer-events:none;opacity:.5}.datainput input:focus~.highlight,.datainput textarea:focus~.highlight{animation:inputHighlighter .3s ease}.datainput input:focus~label,.datainput input:valid~label,.datainput textarea:focus~label,.datainput textarea:valid~label{top:-10px;font-size:13px;color:#21a51f}
+
+ 
+form.whatsapp-form {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-radius: .5rem;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+ .whatsapp-form a.send_form {
+    color: #fff;
+    background: #21a51f;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: .3rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 15px;
+}
+#text-info span {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 700;
+    margin: 15px 0;
+    border-radius: .5rem;
+}
+#text-info span.yes {
+    background: #c6ffc5;
+    color: #0ea904;
+}
+#text-info span.no {
+    background: #ffc5c5;
+    color: #ce0404;
+}
+.whatsapp-form{
+  width:100%;
+  max-width:700px;
+  margin:0 auto;
+  box-sizing:border-box;
+}
+</style>
+
+
+<script type="text/javascript">
+    $(document).on('click','.send_form', function(){
+var input_blanter = document.getElementById('wa_email');
+
+ 
+var walink = 'https://web.whatsapp.com/send',
+    phone = '6285157199771',
+    walink2 = 'Halo saya ingin ',
+    text_yes = 'Terkirim.',
+    text_no = 'Isi semua Formulir lalu klik Send.';
+
+ 
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+var walink = 'whatsapp://send';
+}
+
+if("" != input_blanter.value){
+
+  
+var input_select1 = $("#wa_select :selected").text(),
+    input_image1 = $("#wa_img").val(),
+    input_name1 = $("#wa_name").val(),
+    input_email1 = $("#wa_email").val(),
+    input_number1 = $("#wa_number").val(),
+    input_url1 = $("#wa_url").val(),
+    input_textarea1 = $("#wa_textarea").val();
+
+ 
+var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
+     
+    '*Name* : ' + input_name1 + '%0A' +
+    '*Email Address* : ' + input_email1 + '%0A' +
+    '*Select Option* : ' + input_select1 + '%0A' +
+    '*Input Number* : ' + input_number1 + '%0A' +
+    
+    '*Description* : ' + input_textarea1 + '%0A';
+
+ 
+window.open(blanter_whatsapp,'_blank');
+document.getElementById("text-info").innerHTML = '<span class="yes">'+text_yes+'</span>';
+} else {
+document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</span>';
+}
+});
+</script>
+       </div>
+       </div> 
+       <br>
+       <div class="text-black font-bold text-xl text-center  "> Produk lainnya </div>
+       <br>
+       
+<div class="flex flex-col bg-white m-auto p-auto">
+    <div
+      class="flex overflow-x-scroll pb-1 hide-scroll-bar"
+    >
+    
+      <div
+        class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 "
+      >
+        <div class="inline-block px-1">
+          <div
+            class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+          >
+          
+              <div
+                class="md:flex mb-4 md:mb-0 w-full  relative rounded inline-block" 
+                style="height: 17em;">
+               
+                <div class="md:flex absolute left-0 bottom-0 w-full h-full z-10"
+                  style="background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.7));"></div>
+                  <img src="https://i2.wp.com/blog.printera.com/wp-content/uploads/2018/09/Roll-up-banner-1.png?resize=702%2C562" class="absolute left-0 top-0 w-full h-full rounded z-0 object-cover" />
+                <div class="p-2 absolute bottom-0 left-0 z-20">
+                  <div class="p-4 absolute bottom-0 left-0 z-20">
+                    <span class="px-1 py-1 border-l-4 bg-red-600 text-gray-200 inline-flex items-center justify-center mb-2"> <a href="/benner">Kategori</a></span>
+                    <h2 class=" text-lg font-bold  text-gray-100 leading-tight">
+                      <a href="/benner">Undangan</a>
+                      <br>
+                    </h2>
+                  <div class="flex mt-3">
+                  </div>
+                </div>
+              </a>
+              </div>
+</div>
+</div>
+</div>
+
+
+  
+
+      
+      <div
+        class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 "
+      >
+        <div class="inline-block px-1">
+          <div
+            class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+          >
+          
+              <div
+                class="md:flex mb-4 md:mb-0 w-full  relative rounded inline-block" 
+                style="height: 17em;">
+               
+                <div class="md:flex absolute left-0 bottom-0 w-full h-full z-10"
+                  style="background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.7));"></div>
+                  <img src="https://i2.wp.com/blog.printera.com/wp-content/uploads/2018/09/Roll-up-banner-1.png?resize=702%2C562" class="absolute left-0 top-0 w-full h-full rounded z-0 object-cover" />
+                <div class="p-2 absolute bottom-0 left-0 z-20">
+                  <div class="p-4 absolute bottom-0 left-0 z-20">
+                    <span class="px-1 py-1 border-l-4 bg-red-600 text-gray-200 inline-flex items-center justify-center mb-2"> <a href="/benner">Kategori</a></span>
+                    <h2 class=" text-lg font-bold  text-gray-100 leading-tight">
+                      <a href="/benner">Sablon</a>
+                      <br>
+                    </h2>
+                  <div class="flex mt-3">
+                  </div>
+                </div>
+              </a>
+              </div>
+</div>
+</div>
+</div>
+
+
+  
+
+      
+      <div
+        class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 "
+      >
+        <div class="inline-block px-1">
+          <div
+            class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+          >
+          
+              <div
+                class="md:flex mb-4 md:mb-0 w-full  relative rounded inline-block" 
+                style="height: 17em;">
+               
+                <div class="md:flex absolute left-0 bottom-0 w-full h-full z-10"
+                  style="background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.7));"></div>
+                  <img src="https://i2.wp.com/blog.printera.com/wp-content/uploads/2018/09/Roll-up-banner-1.png?resize=702%2C562" class="absolute left-0 top-0 w-full h-full rounded z-0 object-cover" />
+                <div class="p-2 absolute bottom-0 left-0 z-20">
+                  <div class="p-4 absolute bottom-0 left-0 z-20">
+                    <span class="px-1 py-1 border-l-4 bg-red-600 text-gray-200 inline-flex items-center justify-center mb-2"> <a href="/benner">Kategori</a></span>
+                    <h2 class=" text-lg font-bold  text-gray-100 leading-tight">
+                      <a href="/benner">Aksesoris</a>
+                      <br>
+                    </h2>
+                  <div class="flex mt-3">
+                  </div>
+                </div>
+              </a>
+              </div>
+</div>
+</div>
+</div>
+
+
+  
+
+      
+      </div>
+      </div>
+      </div>
+      
+
+    </div>
+
+<style>
+.hide-scroll-bar {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+display: none;
+}
+</style>
+</div>
+<br>
+<br>
+<br>
+
+
+    </div>
+    
+
+<div class="pt-6">
+    <div class="bg-gray-800 text-gray-400">
+        <br>
+            <div>
+          <div class=" text-center">
+          <h2 class="text-xl mb-6">Contact</h2>
+          <a href="#" class="inline-flex w-8 h-8 rounded-sm bg-blue-600 hover:bg-gray-700 items-center justify-center">
+            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+            </svg>
+          </a>
+          <a href="#" class="inline-flex w-8 h-8 rounded-sm bg-blue-600 hover:bg-gray-700 items-center justify-center">
+            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+            </svg>
+          </a>
+          <a href="#" class="inline-flex w-8 h-8 rounded-sm bg-blue-600 hover:bg-gray-700 items-center justify-center">
+            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCWlDG8QMM_C1Xap1-jGQsEg" class="inline-flex w-8 h-8 rounded-sm bg-blue-600 hover:bg-gray-700 items-center justify-center">
+            <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+            </svg>
+          </a>
+        </div>
+      <br>
+          <div class="px-4 w-full text-center">
+            Copyright &copy; 2020 
+            <script>new Date().getFullYear() > 2020 && document.write("- " + new Date().getFullYear())
+            
+            </script>
+  </footer>
+  </div>
+  <br>
+  <br>
+
+  </body>
+ 
+</html>
