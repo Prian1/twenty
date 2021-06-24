@@ -1,9 +1,9 @@
-baseURL = "https://twentysixdigitalprinting.com/go"
+baseURL = "https://twentysixdigitalprinting.com/"
 languageCode = "en-us"
 title = "twentysixdigitalprinting"
 theme = "pr"
 [Params]
-  subTitle                    = "twentysix"
+  subTitle                    = "|twentysix"
   googleSearchConsole         = "pde0Y8pOtdt5TKDK71t85rCb1twSpn1JzD2_BnUD3f8"
   GoogleAnalytics             = "G-Y9SVW9HGYN"
   # fb_admins                   = 
