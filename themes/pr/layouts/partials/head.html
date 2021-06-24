@@ -3,10 +3,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="/manifest.json">
 	<meta name="theme-color" content="#FFFFFF">
+    <title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} | {{ end }} {{ .Site.Title }} {{ if .IsHome }}{{ .Site.Params.subTitle }}{{ end }}{{ end }}</title>
 	<meta
 		content="aeiwi, alexa, alltheWeb, altavista, aol netfind, anzwers, canada, directhit, euroseek, excite, overture, go, google, hotbot. infomak, kanoodle, lycos, mastersite, national directory, northern light, searchit, simplesearch, Websmostlinked, webtop, what-u-seek, aol, yahoo, webcrawler, infoseek, excite, magellan, looksmart, bing, cnet, googlebot"
 		name="search engines">
      <meta name="google-site-verification" content="pde0Y8pOtdt5TKDK71t85rCb1twSpn1JzD2_BnUD3f8" />
+     <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="author" content="{{ .Param "author" }}" />
+  {{ $keywords := .Site.Params.defaultKeywords | default (slice "" | first 0) }}
+  {{ if isset .Params "tags" }}{{ range .Params.tags }}{{ $keywords = $keywords | append . }}{{ end }}{{ end }}
+  {{ if isset .Params "keywords" }}{{ range .Params.keywords }}{{ $keywords = $keywords | append . }}{{ end }}{{ end }}
+  {{ if gt (len $keywords) 0 }}
+  <meta name="keywords" content="{{ delimit (uniq $keywords) ", " }}">
+  {{ end }}
+  {{ $description_plain := default .Site.Params.defaultDescription .Description | markdownify | plainify }}
+  <meta name="description" content="{{ $description_plain }}">
      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
      <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap'><link rel="stylesheet" href="./style.css">

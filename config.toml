@@ -1,7 +1,14 @@
-baseURL = "https://twentysixdigitalprinting.com"
+baseURL = "https://twentysixdigitalprinting.com/go"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "twentysixdigitalprinting"
 theme = "pr"
+[Params]
+  subTitle                    = "twentysix"
+  googleSearchConsole         = "pde0Y8pOtdt5TKDK71t85rCb1twSpn1JzD2_BnUD3f8"
+  GoogleAnalytics             = "G-Y9SVW9HGYN"
+  # fb_admins                   = 
+  # fb_app_id                   = 
+
 
 [build]
   writeStats = true
@@ -11,3 +18,13 @@ theme = "pr"
     category = "categories"
     series = "Rp"
     reting = ""
+
+[params.menu]
+    name = "Contact"
+    url  = "/contact"
+    weight = 4
+
+[params.widgets]
+    search = true
+    categories = true
+    tags = true

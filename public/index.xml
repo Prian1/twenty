@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://twentysixdigitalprinting.com/index.html</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>twentysixdigitalprinting</title>
+    <link>https://twentysixdigitalprinting.com/go/index.html</link>
+    <description>Recent content on twentysixdigitalprinting</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://twentysixdigitalprinting.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://twentysixdigitalprinting.com/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>aksesoris</title>
-      <link>https://twentysixdigitalprinting.com/tags/aksesoris/</link>
+      <link>https://twentysixdigitalprinting.com/go/tags/aksesoris/</link>
       <pubDate>Thu, 24 Jun 2021 16:08:19 +0700</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/tags/aksesoris/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/tags/aksesoris/</guid>
       <description></description>
     </item>
     
     <item>
       <title>binner</title>
-      <link>https://twentysixdigitalprinting.com/tags/binner/</link>
+      <link>https://twentysixdigitalprinting.com/go/tags/binner/</link>
       <pubDate>Thu, 24 Jun 2021 16:08:19 +0700</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/tags/binner/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/tags/binner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Categories</title>
-      <link>https://twentysixdigitalprinting.com/categories/</link>
+      <link>https://twentysixdigitalprinting.com/go/categories/</link>
       <pubDate>Thu, 24 Jun 2021 16:08:19 +0700</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/categories/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/categories/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hiburan</title>
-      <link>https://twentysixdigitalprinting.com/categories/hiburan/</link>
+      <link>https://twentysixdigitalprinting.com/go/categories/hiburan/</link>
       <pubDate>Thu, 24 Jun 2021 16:08:19 +0700</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/categories/hiburan/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/categories/hiburan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>makanan</title>
-      <link>https://twentysixdigitalprinting.com/categories/makanan/</link>
+      <link>https://twentysixdigitalprinting.com/go/categories/makanan/</link>
       <pubDate>Thu, 24 Jun 2021 16:08:19 +0700</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/categories/makanan/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/categories/makanan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>olahraga</title>
-      <link>https://twentysixdigitalprinting.com/categories/olahraga/</link>
+      <link>https://twentysixdigitalprinting.com/go/categories/olahraga/</link>
       <pubDate>Thu, 24 Jun 2021 16:08:19 +0700</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/categories/olahraga/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/categories/olahraga/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sablon</title>
-      <link>https://twentysixdigitalprinting.com/tags/sablon/</link>
+      <link>https://twentysixdigitalprinting.com/go/tags/sablon/</link>
       <pubDate>Thu, 24 Jun 2021 16:08:19 +0700</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/tags/sablon/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/tags/sablon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>https://twentysixdigitalprinting.com/tags/</link>
+      <link>https://twentysixdigitalprinting.com/go/tags/</link>
       <pubDate>Thu, 24 Jun 2021 16:08:19 +0700</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/tags/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>amplok</title>
-      <link>https://twentysixdigitalprinting.com/tags/amplok/</link>
+      <link>https://twentysixdigitalprinting.com/go/tags/amplok/</link>
       <pubDate>Wed, 23 Jun 2021 15:03:30 +0700</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/tags/amplok/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/tags/amplok/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rp</title>
-      <link>https://twentysixdigitalprinting.com/rp/</link>
+      <link>https://twentysixdigitalprinting.com/go/rp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://twentysixdigitalprinting.com/rp/</guid>
+      <guid>https://twentysixdigitalprinting.com/go/rp/</guid>
       <description></description>
     </item>
     
